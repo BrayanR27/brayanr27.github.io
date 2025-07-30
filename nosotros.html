@@ -1,0 +1,162 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sobre Nosotros</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-[#2e004f] text-white">
+    <header class="bg-[#23003D]"> <!-- Sección del encabezado de la página, con el mismo fondo que el body -->
+  <!-- Barra de navegación. 'max-w-7xl mx-auto' centra el contenido. 'flex items-center justify-between' alinea los elementos (logo a la izquierda, menú a la derecha). 'px-6 py-4' añade espaciado interno. -->
+  <nav class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+    <a class="flex items-center" href="#"> <!-- Enlace para el logo, usualmente lleva a la página de inicio -->
+    <img alt="Logo MS Distribuciones white text on dark purple background with a small pink paper plane icon" class="h-12 w-auto" height="60" src="Logo.png" width="90"/> <!-- La imagen del logo. 'h-12 w-auto' controla su tamaño. 'alt' es importante para la accesibilidad. -->
+    </a>
+    <!-- Lista de enlaces de navegación. 'hidden md:flex' la oculta en pantallas pequeñas y la muestra como flex en medianas y grandes. 'space-x-8' añade espacio entre los elementos. -->
+    <ul class="hidden md:flex space-x-8 text-white font-semibold text-sm">
+    <li> <!-- Cada elemento de la lista de navegación -->
+      <a class="hover:underline" href="index.html"> <!-- Enlace de navegación. 'hover:underline' añade un subrayado al pasar el ratón. -->
+      Inicio
+      </a>
+    </li>
+    <li>
+      <a class="hover:underline" href="productos.html">
+      Productos
+      </a>
+    </li>
+    <li>
+      <a class="hover:underline" href="servicios.html">
+      Servicios
+      </a>
+    </li>
+    <li>
+      <a class="hover:underline" href="nosotros.html">
+      Nosotros
+      </a>
+    </li>
+    <li>
+      <a class="hover:underline" href="Contacto.html">
+      Contacto
+      </a>
+    </li>
+    </ul>
+  </nav>
+  </header>
+  <main class="max-w-7xl mx-auto px-6 py-16 md:flex md:items-center md:gap-16">
+    <section class="md:flex-1 max-w-xl">
+      <h2 class="text-3xl font-extrabold mb-6">
+        Sobre <span class="text-[#b72a8f]">Nosotros</span>
+      </h2>
+      <p class="text-sm leading-relaxed mb-6 text-[#e0d9f0]">
+        Con más de 15 años de experiencia en el sector de distribución, MS Distribuciones se ha consolidado como <u>líder en soluciones logísticas</u> integrales para empresas de todos los tamaños.
+      </p>
+      <p class="text-sm leading-relaxed mb-10 text-[#e0d9f0]">
+        Nuestra misión es facilitar el crecimiento de nuestros clientes a través de servicios de distribución eficientes, tecnología avanzada y un compromiso inquebrantable con la excelencia.
+      </p>
+      <div class="flex gap-6">
+        <div class="bg-white rounded-md p-6 flex flex-col items-center text-center text-[#b72a8f] w-28">
+          <i class="fas fa-bullseye text-2xl mb-2"></i>
+          <span class="font-extrabold text-lg text-black">500+</span>
+          <span class="text-xs text-[#b7a9c6] mt-1">Clientes Satisfechos</span>
+        </div>
+        <div class="bg-white rounded-md p-6 flex flex-col items-center text-center text-[#b72a8f] w-28">
+          <i class="fas fa-user-friends text-2xl mb-2"></i>
+          <span class="font-extrabold text-lg text-black">50+</span>
+          <span class="text-xs text-[#b7a9c6] mt-1">Empleados Expertos</span>
+        </div>
+        <div class="bg-white rounded-md p-6 flex flex-col items-center text-center text-[#b72a8f] w-28">
+          <i class="fas fa-award text-2xl mb-2"></i>
+          <span class="font-extrabold text-lg text-black">15+</span>
+          <span class="text-xs text-[#b7a9c6] mt-1">Años de Experiencia</span>
+        </div>
+      </div>
+    </section>
+    <section class="md:flex-1 mt-12 md:mt-0">
+      <div class="bg-gradient-to-r from-[#b72a8f] to-[#7a0f8a] rounded-xl p-8 max-w-md mx-auto md:mx-0 text-center">
+        <h3 class="font-extrabold text-white text-lg mb-4">Nuestra Visión</h3>
+        <p class="text-sm text-[#e0d9f0] leading-relaxed">
+          Ser la empresa de distribución más confiable y innovadora, conectando negocios con oportunidades de crecimiento a través de soluciones logísticas de clase mundial.
+        </p>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-white">
+  <!-- Contenedor interno del footer que centra el contenido ('max-w-7xl mx-auto') y añade espaciado ('px-6 py-10'). -->
+  <div class="max-w-7xl mx-auto px-6 py-10 text-[#9e7dbf]">
+    <!-- Contenedor para las columnas del footer. 'flex-col md:flex-row' las apila en móvil y las pone en fila en pantallas medianas/grandes. -->
+    <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-10 md:gap-0">
+      <!-- Primera columna del footer (Información de la empresa). Ocupa 1/3 del ancho en pantallas medianas/grandes. -->
+      <div class="md:w-1/3">
+        <h2 class="text-[#1a0033] font-extrabold text-lg mb-3">MS DISTRIBUCIONES</h2>
+        <p class="text-[#A13FA1FF] text-sm leading-relaxed max-w-xs"> <!-- Descripción breve de la empresa. -->
+          Tu socio confiable en distribución. Conectamos empresas con oportunidades de crecimiento a través de soluciones logísticas innovadoras.
+        </p>
+        <div class="flex space-x-4 mt-6"> <!-- Contenedor para los iconos de redes sociales. -->
+          <!-- Enlace para una red social. 'aria-label' es importante para la accesibilidad. Las clases le dan forma circular y estilos de color. -->
+          <a href="#" aria-label="Facebook" class="bg-[#fce9f9] text-[#b3008a] rounded-full w-8 h-8 flex items-center justify-center hover:bg-[#D30BA4CB]">
+            <i class="fab fa-facebook-f text-sm"></i>
+          </a>
+          <a href="#" aria-label="Twitter" class="bg-[#fce9f9] text-[#b3008a] rounded-full w-8 h-8 flex items-center justify-center hover:bg-[#D30BA4CB]">
+            <i class="fab fa-twitter text-sm"></i>
+          </a>
+          <a href="#" aria-label="LinkedIn" class="bg-[#fce9f9] text-[#b3008a] rounded-full w-8 h-8 flex items-center justify-center hover:bg-[#D30BA4CB]">
+            <i class="fab fa-linkedin-in text-sm"></i>
+          </a>
+          <a href="#" aria-label="Instagram" class="bg-[#fce9f9] text-[#b3008a] rounded-full w-8 h-8 flex items-center justify-center hover:bg-[#D30BA4CB]">
+            <i class="fab fa-instagram text-sm"></i>
+          </a>
+        </div>
+      </div>
+      <!-- Segunda columna del footer (Enlaces Rápidos). -->
+      <div class="md:w-1/3">
+        <h3 class="text-[#1a0033] font-semibold mb-3">Enlaces Rápidos</h3>
+        <!-- Contenedor semántico para la navegación de enlaces rápidos. 'flex-col' y 'space-y-2' apilan los enlaces verticalmente con espacio. -->
+        <nav class="flex flex-col space-y-2 text-[#A13FA1FF] text-sm">
+          <a href="index.html" class="hover:underline hover:text-[#b3008a]">Inicio</a>
+          <a href="productos.html" class="hover:underline hover:text-[#b3008a]">Productos</a>
+          <a href="servicios.html" class="hover:underline hover:text-[#b3008a]">Servicios</a>
+          <a href="nosotros.html" class="hover:underline hover:text-[#b3008a]">Nosotros</a>
+          <a href="Contacto.html" class="hover:underline hover:text-[#b3008a]">Contacto</a>
+        </nav>
+      </div>
+      <!-- Tercera columna del footer (Contacto). -->
+      <div class="md:w-1/3">
+        <h3 class="text-[#1a0033] font-semibold mb-3">Contacto</h3>
+        <!-- Contenedores para cada pieza de información de contacto, con su icono y texto. -->
+        <div class="flex items-center space-x-2 text-[#A13FA1FF] text-sm mb-2">
+          <i class="fas fa-phone-alt text-[#b3008a]"></i>
+          <span>+57 3134709171</span>
+        </div>
+        <div class="flex items-center space-x-2 text-[#A13FA1FF] text-sm mb-4">
+          <i class="fas fa-envelope text-[#b3008a]"></i>
+          <span>info@msdistribuciones.com</span>
+        </div>
+        <p class="text-[#1a0033] text-sm font-semibold mb-1">Dirección:</p>
+        <p class="text-[#A13FA1FF] text-sm">Calle 71#70g-15</p>
+        <p class="text-[#A13FA1FF] text-sm">Barrio Acapulco</p>
+      </div>
+    </div>
+    <hr class="border-t border-[#9e7dbf] my-6" /> <!-- Línea horizontal para separar las secciones del footer. 'my-6' añade margen vertical. -->
+    <!-- Contenedor para la parte inferior del footer (copyright y enlaces legales). -->
+    <div class="flex flex-col md:flex-row justify-between text-[#bfa9d1] text-xs">
+      <p>© 2024 MS Distribuciones. Todos los derechos reservados.</p> <!-- Texto de derechos de autor. -->
+      <div class="flex space-x-6 mt-3 md:mt-0"> <!-- Contenedor para los enlaces de políticas. 'mt-3 md:mt-0' añade margen en móvil pero no en pantallas grandes. -->
+        <a href="#" class="hover:underline">Política de Privacidad</a>
+        <a href="#" class="hover:underline">Términos de Servicio</a>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>
