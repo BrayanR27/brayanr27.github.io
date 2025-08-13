@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -20,14 +20,28 @@
                 <img alt="Logo MS Distribuciones" class="h-12 w-auto" height="60" src="Logo.png" width="90"/>
             </a>
             
-            <ul class="flex space-x-2 md:space-x-8 text-white font-semibold text-sm">
+            <ul class="hidden md:flex space-x-8 text-white font-semibold text-sm">
                 <li><a class="hover:underline" href="index.html">Inicio</a></li>
                 <li><a class="hover:underline" href="productos.html">Productos</a></li>
                 <li><a class="hover:underline" href="servicios.html">Servicios</a></li>
                 <li><a class="hover:underline" href="nosotros.html">Nosotros</a></li>
                 <li><a class="hover:underline" href="Contacto.html">Contacto</a></li>
             </ul>
+            
+            <button id="menu-button" class="text-white md:hidden focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
         </nav>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-[#2a0540] p-4 text-center">
+            <ul class="flex flex-col space-y-4 text-white font-semibold">
+                <li><a class="hover:underline" href="index.html">Inicio</a></li>
+                <li><a class="hover:underline" href="productos.html">Productos</a></li>
+                <li><a class="hover:underline" href="servicios.html">Servicios</a></li>
+                <li><a class="hover:underline" href="nosotros.html">Nosotros</a></li>
+                <li><a class="hover:underline" href="Contacto.html">Contacto</a></li>
+            </ul>
+        </div>
     </header>
 
     <main>
@@ -108,5 +122,14 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
