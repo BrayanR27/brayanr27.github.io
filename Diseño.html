@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Teleférico - Diseño</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="project-title">Proyecto Teleférico</a>
+            <nav class="nav">
+                <a href="index.html">El Proyecto</a>
+                <a href="Diseño.html" class="active">Diseño</a>
+                <a href="videos.html">Videos</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+            <button class="hamburger-menu" id="hamburger-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="planos">
+            <div class="container">
+                <h2>Diseño y Construcción</h2>
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/600x400.png?text=Esquema+de+Conexiones" alt="Esquema de conexiones del circuito">
+                        <p>Esquema de Conexiones</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/600x400.png?text=Diseño+Estructural" alt="Plano del diseño estructural">
+                        <p>Diseño Estructural</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Proyecto Teleférico. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger-menu');
+        const navMenu = document.querySelector('.nav');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>
