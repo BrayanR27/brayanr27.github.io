@@ -8,7 +8,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-</head>
+    
+    <style>
+        .tech-features li a {
+            /* Esto hace que el enlace ocupe todo el espacio del 'li' */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            /* Esto quita la decoración de enlace (subrayado) */
+            text-decoration: none;
+            color: inherit; /* Hereda el color de texto normal */
+            
+            /* Efecto opcional al pasar el ratón */
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            padding: 10px; /* Añade un poco de espacio para el efecto */
+            border-radius: 8px; /* Redondea las esquinas */
+        }
+
+        .tech-features li a:hover {
+            transform: scale(1.05); /* Agranda un poco el botón */
+            text-decoration: none; /* Se asegura de no subrayar */
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Añade una sombra sutil */
+        }
+    </style>
+    </head>
 <body>
 
     <header class="header">
@@ -34,6 +58,63 @@
                 <h1>Ingeniería y Creatividad en Movimiento</h1>
                 <img src="https://via.placeholder.com/800x500.png?text=Maqueta+del+Teleférico" alt="Maqueta completa del teleférico" class="main-image">
 
+                <p>Este proyecto nace como un desafío: demostrar la aplicación práctica de la tecnología y la programación en un modelo funcional y elegante. Se trata de un teleférico automatizado, diseñado desde cero como un proyecto culminante que fusiona la ingeniería mecánica con la inteligencia del software.</p>
+                <p>La estructura, cuidadosamente elaborada con cartón y madera de balso, demuestra cómo materiales accesibles pueden transformarse en una pieza de ingeniería precisa. En su interior, el sistema cobra vida gracias a un cerebro Arduino UNO. Este microcontrolador ejecuta un código afinado para dirigir un Puente H L298N, que a su vez gestiona la potencia y dirección de los dos motores, asegurando un movimiento fluido y estable.</p>
+                <p>El mayor reto del proyecto fue la programación del código Arduino: sincronizar el hardware y perfeccionar la lógica para que cada acción fuera impecable. La solución se logró a través de un sensor seguidor de línea infrarrojo, que actúa como los ojos del sistema, permitiéndole detenerse de forma autónoma y con una precisión milimétrica en sus estaciones.</p>
+                <p>El resultado es una maqueta excelente y completamente funcional que no solo se mueve, sino que ejecuta su tarea de forma inteligente y autónoma, reflejando una profunda comprensión de la tecnología y un alto nivel de ejecución.</p>
+
+                <ul class="tech-features">
+                    <li>
+                        <a href="https://www.google.com/search?q=Arduino+UNO" target="_blank">
+                            <img src="https://www.prometec.net/wp-content/uploads/2015/01/Arduino-UNO.jpg" alt="Icono de Arduino UNO">
+                            <span>Controlador: Arduino UNO</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.google.com/search?q=Motor+DC" target="_blank">
+                            <img src="https://mcielectronics.cl/wp-content/uploads/2022/04/MCI01178A-600x600.webp" alt="Icono de Motor DC">
+                            <span>Motores: 2 Motores DC</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.google.com/search?q=Puente+H+L298N" target="_blank">
+                            <img src="https://http2.mlstatic.com/D_NQ_NP_811165-MCO54080162605_022023-O.webp" alt="Icono de Puente H L298N">
+                            <span>Control: Puente H L298N</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.google.com/search?q=Sensor+seguidor+de+l%C3%ADnea+IR" target="_blank">
+                            <img src="https://cdnx.jumpseller.com/mactornica/image/9460099/3.jpg?1655825714" alt="Icono de Sensor Infrarrojo">
+                            <span>Sensor: Seguidor de línea IR</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.google.com/search?q=Madera+de+balso+y+carton+para+maquetas" target="_blank">
+                            <img src="https://bricolaje.co/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MjE0MzU0NCwicHVyIjoiYmxvYl9pZCJ9fQ==--3df14dff9c1ea8d1214b21b615348ea16b1bcc04/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX2FuZF9wYWQiOlszMjAsMzIwLHsiZXh0ZW5kIjoid2hpdGUifV19LCJwdXIiOiJ2YXJpYXRpb24ifX0=--a7d4729092d7300df826ec1077a67fefc8243382/carton%20piedra_Mesa%20de%20trabajo%201.jpg?locale=es" alt="Icono de Materiales">
+                            <span>Materiales: Madera y cartón</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Proyecto Teleférico. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger-menu');
+        const navMenu = document.querySelector('.nav');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+    </script>
+    
+</body>
+</html>
                 <p>Este proyecto nace como un desafío: demostrar la aplicación práctica de la tecnología y la programación en un modelo funcional y elegante. Se trata de un teleférico automatizado, diseñado desde cero como un proyecto culminante que fusiona la ingeniería mecánica con la inteligencia del software.</p>
                 <p>La estructura, cuidadosamente elaborada con cartón y madera de balso, demuestra cómo materiales accesibles pueden transformarse en una pieza de ingeniería precisa. En su interior, el sistema cobra vida gracias a un cerebro Arduino UNO. Este microcontrolador ejecuta un código afinado para dirigir un Puente H L298N, que a su vez gestiona la potencia y dirección de los dos motores, asegurando un movimiento fluido y estable.</p>
                 <p>El mayor reto del proyecto fue la programación del código Arduino: sincronizar el hardware y perfeccionar la lógica para que cada acción fuera impecable. La solución se logró a través de un sensor seguidor de línea infrarrojo, que actúa como los ojos del sistema, permitiéndole detenerse de forma autónoma y con una precisión milimétrica en sus estaciones.</p>
